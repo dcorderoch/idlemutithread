@@ -1,11 +1,13 @@
-#include <stdio.h>
-#include <string.h>
-#include <pthread.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdbool.h>
-#include <sys/types.h>
-#include <time.h>
+#include <stdio.h> // for printf, scanf, puts, NULL
+#include <pthread.h> // for pthread types
+#include <unistd.h> // for sleep()
+#include <sys/types.h> // for pthread types
+#include <stdbool.h> // for bool type
+#include <regex.h> // for regular expressions POSIX
+#include <stdlib.h> // for malloc() & free()
+#include <string.h> // for strlen(), memcpy() & memset()
+#include <stdlib.h> // for srand, rand
+#include <time.h> // for time()
 
 pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER;
